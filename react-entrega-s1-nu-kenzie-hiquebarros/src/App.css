@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;400&family=Nunito:wght@700&family=Poppins:wght@500&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  display: flex;
+
+}
+.form{
+  width: 363px;
+  height: 351px;
+
+  background: #FFFFFF;
+
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  margin: 100px 0px 0px 350px;
+}
+.resumo-financeiro{
+  margin: 100px 0px 0px 275px;
+}
+.resumo-financeiro--head{
+  display: flex;
+  justify-content: space-between;
+}
+.resumo-financeiro--title h3{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  
+  color: #212529;
+}
+.resumo-financeiro--buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.filtrar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #E9ECEF;
+
+  border: 1.4px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0px 10px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #868E96;
+}
+.filtrar:active{
+  transform: scale(0.98);
+}
+.filtrar:hover{
+  background-color:aliceblue;
+}
+.filtrar-todos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #FD377E;
+
+  border: 1.4px solid #FD377E;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0px 10px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: white
+}
+.filtrar-todos:active{
+  transform: scale(0.98);
+}
+.filtrar-todos:hover{
+  background-color:crimson;
+}
