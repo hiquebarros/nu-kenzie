@@ -4,6 +4,7 @@ import './styles.css'
 
 function List({listTransactions, filterEntradasOn, filterSaidasOn}){
 
+
     const entradasList = listTransactions.filter(item => {
         return item.type === "entrada"
     })
@@ -13,16 +14,16 @@ function List({listTransactions, filterEntradasOn, filterSaidasOn}){
     })
 
     return(
-        <div>
+        <div className="list">
         {listTransactions.length < 1 ? (
             <div className="empty">
             <h2>Você ainda não possui nenhum lançamento</h2>
             <img src={NoCard}></img>
             </div>
         ) : filterEntradasOn === true ? (
-             entradasList.map((transaction, index) => <Card transaction={transaction} key={index}></Card>)
+             entradasList.map((transaction) => <Card transaction={transaction} key={transaction.id}></Card>)
         ) : filterSaidasOn === true ? (
-            saidasList.map((transaction, index) => <Card transaction={transaction} key={index}></Card>)
+            saidasList.map((transaction) => <Card transaction={transaction} key={transaction.id}></Card>)
         ) : listTransactions.map((transaction, index) => <Card transaction={transaction} key={index}></Card>)
     }   
         </div>

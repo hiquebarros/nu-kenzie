@@ -3,29 +3,36 @@
 .App {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .content{
   display: flex;
-
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .form{
-  width: 363px;
-  height: 351px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin-top: 25px;
+  padding: 20px;
   background: #FFFFFF;
 
   border: 1px solid #E9ECEF;
   box-sizing: border-box;
   border-radius: 4px;
-
-  margin: 100px 0px 0px 350px;
 }
 .resumo-financeiro{
-  margin: 100px 0px 0px 275px;
+  max-width: 300px;
 }
 .resumo-financeiro--head{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 .resumo-financeiro--title h3{
   font-family: 'Nunito';
@@ -48,6 +55,8 @@
   align-items: center;
   padding: 15px;
   background: #E9ECEF;
+  height: 30px;
+  width: 60px;
 
   border: 1.4px solid #E9ECEF;
   box-sizing: border-box;
@@ -75,6 +84,8 @@
   align-items: center;
   padding: 15px;
   background: #FD377E;
+  height: 30px;
+  width: 60px;
 
   border: 1.4px solid #FD377E;
   box-sizing: border-box;
@@ -95,3 +106,60 @@
 .filtrar-todos:hover{
   background-color:crimson;
 }
+
+@media (min-width: 375px) {
+  .form{
+    max-width: 350px;
+    width: 100%;
+  }
+  .resumo-financeiro{
+    width: 100%;
+    max-width: 350px;
+  }
+}
+@media (min-width: 425px){
+  .form{
+    max-width: 375px;
+    width: 100%;
+  }
+  .resumo-financeiro{
+    width: 100%;
+    max-width: 375px;
+  }
+}
+@media (min-width: 768px){
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+  .form{
+    max-width: 300px;
+    width: 100%;
+  }
+  .resumo-financeiro{
+    width: 100%;
+    max-width: 300px;
+  }
+  .filtrar{
+    height: 50px;
+    width: 90px;
+  }
+  .filtrar-todos{
+    height: 50px;
+    width: 90px;
+  }
+}
+@media (min-width: 1024px){
+
+}
+@media (min-width: 1440px){
+  .content{
+    justify-content: center;
+  }
+  .form{
+    margin-right: 200px;
+  }
+}
+

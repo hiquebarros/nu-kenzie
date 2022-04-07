@@ -6,25 +6,27 @@ function Form({ listTransactions, setListTransactions}) {
   const [description, setDescription] = useState("");
   const [type, setType] = useState("entrada");
   const [value, setValue] = useState('');
+  const [id, setId] = useState(0)
 
   function ListarTrans() {
     if(value > 0 && description){
       if(type === "entrada"){
         setListTransactions([
           ...listTransactions,
-          { description: description, type: type, value: parseInt(value) },
+          { id: id, description: description, type: type, value: parseInt(value) },
         ]);
       } else {
         setListTransactions([
           ...listTransactions,
-          { description: description, type: type, value: parseInt(value) - (parseInt(value) * 2) },
+          { id: id, description: description, type: type, value: parseInt(value) - (parseInt(value) * 2) },
         ]);
       }
+      setId(id + 1)
     }
   }
 
   return (
-    <>
+    <div>
       <div className="form-descricao">
         <h5>Descrição</h5>
         <input
@@ -59,7 +61,7 @@ function Form({ listTransactions, setListTransactions}) {
       <div className="form-button">
         <button onClick={() => ListarTrans()}>Inserir valor</button>
       </div>
-    </>
+    </div>
   );
 }
 

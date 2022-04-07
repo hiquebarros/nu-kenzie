@@ -61,7 +61,6 @@ function App() {
             filterEntradasOn={filterEntradasOn}
             filterSaidasOn={filterSaidasOn}
             showAllOn={showAllOn}
-
           ></List>
         </div>
       </div>

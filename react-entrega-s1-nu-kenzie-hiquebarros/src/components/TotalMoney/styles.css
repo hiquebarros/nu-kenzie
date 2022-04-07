@@ -1,0 +1,38 @@
+.totalmoney{
+    width: 100%;
+}
+.valor-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 96px;
+    border: solid 1px #e9ecef;
+    border-radius: 4px;
+}
+.valor-total--left{
+    margin-left: 15px;
+}
+.valor-total--right{
+    margin-right: 15px;
+}
+.valor-total h3{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+}
+.valor-total h4{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    margin-right: 25px;
+
+    color: #FD377E;
+}
+@media (min-width: 375px){
+    
+}

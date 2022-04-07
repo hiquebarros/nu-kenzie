@@ -3,7 +3,7 @@ import {BsFillTrashFill} from 'react-icons/bs'
 
 function Card({transaction}){
     return(
-        <>
+        <div className='cards'>
         {transaction.value > 0 ? (
         <div className="green-card">
         <div className='card-left'>
@@ -27,8 +27,9 @@ function Card({transaction}){
         </div>
     </div>
     )}
-        </>
+        </div>
         
     )
 }
+
 export default Card

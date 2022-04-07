@@ -1,6 +1,8 @@
+import './styles.css'
+
 function TotalMoney({listTransactions}){
     return(
-        <div>
+        <div className="totalmoney">
         {listTransactions.length > 0 ? (
         <div className="valor-total">
           <div className="valor-total--left">
