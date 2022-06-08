@@ -8,7 +8,6 @@ import TotalMoney from "./components/TotalMoney/TotalMoney";
 function App() {
   const [listTransactions, setListTransactions] = useState([
   ]);
-
   const [filterEntradasOn, setFilterEntradasOn] = useState(false)
   const [filterSaidasOn, setFilterSaidasOn] = useState(false)
   const [showAllOn, setShowAllOn] = useState(true)
@@ -28,6 +27,13 @@ function App() {
     setShowAllOn(true)
     setFilterSaidasOn(false)
     setFilterEntradasOn(false)
+  }
+
+  function excluirCard(id){
+    const filtered = listTransactions.filter(transaction => {
+      return transaction.id !== id
+    })
+    setListTransactions(filtered)
   }
 
   return (
@@ -59,6 +65,7 @@ function App() {
             filterEntradasOn={filterEntradasOn}
             filterSaidasOn={filterSaidasOn}
             showAllOn={showAllOn}
+            excluirCard={excluirCard}
           ></List>
         </div>
       </div>

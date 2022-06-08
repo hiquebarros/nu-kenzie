@@ -1,7 +1,7 @@
 import './styles.css'
 import {BsFillTrashFill} from 'react-icons/bs'
 
-function Card({transaction}){
+function Card({transaction, excluirCard}){
     return(
         <div className='cards'>
         {transaction.value > 0 ? (
@@ -12,7 +12,7 @@ function Card({transaction}){
         </div>
         <div className='card-right'>
             <h5>R$ {Math.abs(transaction.value).toFixed(2).replace('.',',')}</h5>
-            <button className='card-excluir'><BsFillTrashFill /></button>
+            <button className='card-excluir' onClick={()=> excluirCard(transaction.id)}><BsFillTrashFill /></button>
         </div>
     </div>
     ) : (
@@ -23,7 +23,7 @@ function Card({transaction}){
         </div>
         <div className='card-right'>
             <h5>R$ {Math.abs(transaction.value).toFixed(2).replace('.',',')}</h5>
-            <button className='card-excluir'><BsFillTrashFill /></button>
+            <button className='card-excluir' onClick={()=> excluirCard(transaction.id)}><BsFillTrashFill /></button>
         </div>
     </div>
     )}

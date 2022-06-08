@@ -113,9 +113,11 @@
     line-height: 19px;
 
     color: #FFFFFF;
+    cursor: pointer;
 }
 .form-button button:hover{
     background-color: crimson;
+    border: crimson
 }
 .form-button button:active{
     transform: scale(0.98);

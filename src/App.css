@@ -57,12 +57,10 @@
   background: #E9ECEF;
   height: 30px;
   width: 60px;
-
   border: 1.4px solid #E9ECEF;
   box-sizing: border-box;
   border-radius: 8px;
   margin: 0px 10px;
-
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
@@ -70,12 +68,14 @@
   line-height: 19px;
   text-align: center;
   color: #868E96;
+  cursor: pointer;
 }
 .filtrar:active{
   transform: scale(0.98);
 }
 .filtrar:hover{
-  background-color:aliceblue;
+    background-color:aliceblue;
+    border: aliceblue;
 }
 .filtrar-todos{
   display: flex;
@@ -98,13 +98,15 @@
   font-size: 14px;
   line-height: 19px;
   text-align: center;
-  color: white
+  color: white;
+  cursor: pointer;
 }
 .filtrar-todos:active{
   transform: scale(0.98);
 }
 .filtrar-todos:hover{
   background-color:crimson;
+  border: crimson;
 }
 
 @media (min-width: 375px) {

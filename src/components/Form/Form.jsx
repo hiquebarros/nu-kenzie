@@ -2,26 +2,36 @@ import "./styles.css";
 import "./reset.css";
 import { useState } from "react";
 
-function Form({ listTransactions, setListTransactions}) {
+function Form({ listTransactions, setListTransactions }) {
   const [description, setDescription] = useState("");
   const [type, setType] = useState("entrada");
-  const [value, setValue] = useState('');
-  const [id, setId] = useState(0)
+  const [value, setValue] = useState("");
+  const [id, setId] = useState(0);
 
   function ListarTrans() {
-    if(value > 0 && description){
-      if(type === "entrada"){
+    if (value > 0 && description) {
+      if (type === "entrada") {
         setListTransactions([
           ...listTransactions,
-          { id: id, description: description, type: type, value: parseInt(value) },
+          {
+            id: id,
+            description: description,
+            type: type,
+            value: parseInt(value),
+          },
         ]);
       } else {
         setListTransactions([
           ...listTransactions,
-          { id: id, description: description, type: type, value: parseInt(value) - (parseInt(value) * 2) },
+          {
+            id: id,
+            description: description,
+            type: type,
+            value: parseInt(value) - parseInt(value) * 2,
+          },
         ]);
       }
-      setId(id + 1)
+      setId(id + 1);
     }
   }
 
