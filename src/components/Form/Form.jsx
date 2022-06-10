@@ -1,5 +1,4 @@
 import "./styles.css";
-import "./reset.css";
 import { useState } from "react";
 
 function Form({ listTransactions, setListTransactions }) {
@@ -36,7 +35,7 @@ function Form({ listTransactions, setListTransactions }) {
   }
 
   return (
-    <div>
+    <div className="form-container">
       <div className="form-descricao">
         <h5>Descrição</h5>
         <input
@@ -52,6 +51,7 @@ function Form({ listTransactions, setListTransactions }) {
           <input
             type="number"
             className="form-valor--input"
+            placeholder="R$"
             onChange={(event) => setValue(event.target.value)}
           ></input>
         </div>

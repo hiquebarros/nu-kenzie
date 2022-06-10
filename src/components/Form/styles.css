@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;400&family=Nunito:wght@700&family=Poppins:wght@500&display=swap');
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
 
 .form-descricao{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding: 15px;
 }
 .form-valor{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 15px;
 }
 .form-descricao--input{
@@ -34,6 +38,7 @@
     line-height: 26px;
 
     color: #868E96;
+    width: 100px;
 }
 .form-valor--select{
     display: flex;
@@ -57,7 +62,8 @@
     color: #868E96;
 }
 .form-valor--div1{
-    margin-right: 20px;
+    margin-right: 10px;
+    width: 150px;
 }
 .form-descricao h5, .form-valor h5{
     font-family: 'Inter';
@@ -99,10 +105,10 @@
     align-items: center;
 }
 .form-button button{
-    width: 80%;
+    width: 260px;
     height: 48px;
     background: #FD377E;
-
+    margin: 20px 0 0 0;
     border: 2px solid #FD377E;
     box-sizing: border-box;
     border-radius: 8px;
@@ -122,8 +128,3 @@
 .form-button button:active{
     transform: scale(0.98);
 }
-
-@media (min-width: 375px){
-
-}
-
