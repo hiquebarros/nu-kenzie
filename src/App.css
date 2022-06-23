@@ -111,7 +111,7 @@
   border: crimson;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1000px){
 
   .app-content{
     display: flex;

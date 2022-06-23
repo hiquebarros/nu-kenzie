@@ -11,6 +11,7 @@
 .header-content{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 65%;
 }
 
@@ -31,6 +32,8 @@
     border-radius: 8px;
     padding: 15px;
     cursor: pointer;
+    color: #343A40;
+    font-family: Nunito;
 }
 
 .header-button:hover{
