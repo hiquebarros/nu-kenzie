@@ -2,9 +2,9 @@
 
 ## 1. Sobre
 
-    O Nu Kenzie é um controlador de finanças pessoais que simula aidentidade da marca NuBank, 
-    esse projeto foi desenvolvido como entrega da primeira sprint no terceiro módulo de Front-End
-    na Kenzie Academy Brasil, onde o intuito era sermos intruduzidos aos conceitos do ReactJS.
+    O Nu Kenzie é um controlador de finanças pessoais que simula a identidade da marca NuBank.
+    Esse projeto foi desenvolvido como entrega da primeira sprint de ReactJS
+    na Kenzie Academy Brasil.
 
 
 ## 2. Links Relevantes
